@@ -1,0 +1,53 @@
+# -------------------------------
+# MCP (Model Context Protocol) Overview
+# -------------------------------
+
+# Purpose
+# -------------------------------
+# - MCP is an open-source standard for connecting AI agents to data sources (databases, APIs, local files, code).
+# - Simplifies communication between agents (LLMs) and multiple data sources.
+
+# Components
+# -------------------------------
+# 1. MCP Host
+#    - Top-level application (e.g., chat app, code assistant in IDE).
+#    - Includes MCP client(s).
+#    - Sends user queries and receives final results.
+#
+# 2. MCP Client
+#    - Embedded in the host.
+#    - Facilitates communication with MCP servers.
+#
+# 3. MCP Server
+#    - Connects to actual data sources (databases, APIs, local files, code).
+#    - Executes requested tools/actions.
+#    - Can have multiple servers connected to a single host/client.
+
+# MCP Protocol
+# -------------------------------
+# - Serves as the transport layer between host/client and servers.
+# - Standardizes communication regardless of type of database, API, or data source.
+
+# How It Works (Example)
+# -------------------------------
+# 1. User asks a question in MCP host (chat app, code assistant).
+# 2. MCP host retrieves available tools from MCP server(s).
+# 3. Host/client sends question + tools to the LLM.
+# 4. LLM decides which tools to use.
+# 5. MCP host/client calls the appropriate MCP server to execute tools.
+# 6. MCP server executes actions (e.g., query database, call API, run code) and returns results.
+# 7. Results are sent back to the LLM.
+# 8. Final answer is returned to the user in the host application.
+
+# Benefits
+# -------------------------------
+# - Standardizes access to diverse data sources for AI agents.
+# - Supports multiple servers and multiple hosts/clients.
+# - Works with relational & NoSQL databases, APIs, local files, and code.
+# - Facilitates integration with LLMs to automate tool selection and execution.
+# - Especially useful for building agentic systems (e.g., code assistants).
+
+# Recommendation
+# -------------------------------
+# - If building AI agents, learn and implement MCP to streamline connecting data sources.
+# - Useful even if not directly building agents—supports client applications that interact with agents.

@@ -1,0 +1,41 @@
+# -------------------------------
+# AI-Powered SQL Agents
+# -------------------------------
+
+# Benefits
+# -------------------------------
+# - Bridge natural language ↔ SQL → improved data accessibility
+# - Allow non-technical users to query/interpret data
+# - Lower barrier to data-driven insights
+
+# Capabilities
+# -------------------------------
+# - Understand database schemas
+#   • Retrieve only relevant table schemas
+# - Support query process:
+#   • Multi-step querying (combine results if one query not enough)
+#   • Auto error handling → capture traceback, retry with corrected query
+# - Output → clear, natural-language answers
+
+# Limitations & Considerations
+# -------------------------------
+# - Query interpretation may be inaccurate
+# - Complex SQL may require manual adjustment
+# - Reliability requires continuous testing & validation
+
+# Query Processing Flow
+# -------------------------------
+# 1. User → asks question (natural language)
+# 2. SQL Agent → LLM interprets → generates SQL query
+# 3. Database connector → sends query to DB
+# 4. DB → processes query → returns raw data
+# 5. Connector → passes raw data back to LLM
+# 6. LLM → parses, processes, formats result
+# 7. Agent → outputs final answer in natural language
+
+# -------------------------------
+# Key Takeaways
+# -------------------------------
+# - SQL agents = natural language interface to databases
+# - Extend accessibility, efficiency, and usability
+# - Still require oversight for accuracy on complex queries

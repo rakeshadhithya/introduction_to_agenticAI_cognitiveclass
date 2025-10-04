@@ -1,0 +1,56 @@
+# -------------------------------
+# Retrieval Augmented Generation (RAG)
+# -------------------------------
+
+# 1. The Challenge with LLMs
+# -------------------------------
+# - LLMs generate text from training data (prompts → responses).
+# - Two major issues:
+#   • Out-of-date knowledge (cannot adapt without retraining)
+#   • No sources (confident answers without evidence → hallucinations)
+
+# Example:
+#   Q: Which planet has the most moons?
+#   • LLM (trained data): "Jupiter"
+#   • Reality (updated): "Saturn, 146 moons"
+#   → Problem: outdated + no cited source
+
+# 2. What is RAG?
+# -------------------------------
+# - RAG = Retrieval + Generation
+# - Instead of only using training data:
+#   1. LLM first queries a retrieval system / datastore
+#      (sources: internet, databases, policies, local docs, etc.)
+#   2. Retrieves relevant content
+#   3. Combines retrieved info with the user’s question
+#   4. Generates grounded answer with evidence
+
+# Prompt now includes:
+#   • User query
+#   • Retrieved content
+#   • Instruction: use content to generate response
+
+# 3. Benefits of RAG
+# -------------------------------
+# - Solves out-of-date problem:
+#   • No need to retrain model → just update datastore
+# - Solves no source problem:
+#   • Model uses primary sources → can cite evidence
+#   • Less hallucination, less accidental data leakage
+# - Enables "I don’t know" behavior when datastore has no answer
+
+# 4. Challenges of RAG
+# -------------------------------
+# - Quality depends on retriever:
+#   • Poor retrieval → incomplete or wrong grounding
+#   • May fail to answer even valid questions
+# - Requires improvements on both sides:
+#   • Better retrievers → high-quality, relevant data
+#   • Better generators → rich, accurate responses
+
+# 5. Key Takeaways
+# -------------------------------
+# - LLMs alone = risk of outdated / unsupported answers
+# - RAG augments LLMs with external knowledge
+# - Benefits: accuracy, up-to-date info, sources, reduced hallucination
+# - Limitations: relies on retriever + datastore quality

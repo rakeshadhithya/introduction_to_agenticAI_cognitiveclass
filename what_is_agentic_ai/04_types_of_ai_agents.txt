@@ -1,0 +1,138 @@
+# -------------------------------
+# Types of AI Agents
+# -------------------------------
+
+# Agents = classified by level of intelligence,
+# decision-making process, and interaction with environment.
+
+# Five main types:
+# 1. Simple Reflex Agents
+# 2. Model-Based Reflex Agents
+# 3. Goal-Based Agents
+# 4. Utility-Based Agents
+# 5. Learning Agents
+
+# -------------------------------
+# 1. Simple Reflex Agents
+# -------------------------------
+# - Most basic agent type.
+# - Operates with predefined condition–action rules.
+#   Example: thermostat
+#     IF temp < threshold → turn on heat
+#     IF temp >= setpoint → turn off heat
+#
+# - Key components:
+#   - Environment → external world
+#   - Percepts → input from sensors
+#   - Condition-action rules → "if-condition-then-action"
+#   - Actuators → execute chosen action
+#
+# - Cycle:
+#   environment → sensors → percepts → logic → action → actuators → environment
+#
+# - Strength:
+#   Effective in structured, predictable environments.
+# - Limitation:
+#   No memory → repeats mistakes in dynamic/unexpected scenarios.
+
+# -------------------------------
+# 2. Model-Based Reflex Agents
+# -------------------------------
+# - Builds on simple reflex agents.
+# - Uses condition-action rules + internal state (model of the world).
+# - State component:
+#   - Tracks how the world evolves.
+#   - Tracks how the agent’s actions affect environment.
+#
+# - Example: robotic vacuum
+#   - Internal map → knows where it cleaned / obstacles.
+#   - Rule: IF dirty area not cleaned yet → vacuum it.
+#   - Doesn’t just react to current percepts → infers from stored state.
+#
+# - Strength:
+#   Can handle partially observable environments.
+# - Limitation:
+#   Still reactive, not goal-driven.
+
+# -------------------------------
+# 3. Goal-Based Agents
+# -------------------------------
+# - Builds on model-based agents.
+# - Decision-making guided by goals (desired outcomes).
+# - Uses internal model to simulate future outcomes:
+#   "If I do action A, what state will result? Will it achieve my goal?"
+#
+# - Example: self-driving car
+#   - Goal: reach destination X.
+#   - Current state: on Main Street.
+#   - Simulation: IF turn left → head to highway.
+#   - Decision: choose action that helps achieve goal.
+#
+# - Strength:
+#   Flexible, adapts plans to reach goal.
+# - Limitation:
+#   Any path that achieves the goal is acceptable → no preference between outcomes.
+
+# -------------------------------
+# 4. Utility-Based Agents
+# -------------------------------
+# - Extends goal-based agents with a utility function.
+# - Considers not only "achieves goal?" but "how good is the outcome?"
+# - Utility = preference score/happiness value.
+# - Chooses action that maximizes expected utility.
+#
+# - Example: drone delivery
+#   - Goal-based → deliver package to address X (any route works).
+#   - Utility-based → deliver package:
+#       - quickly
+#       - safely
+#       - with minimal energy use
+#   - Simulates multiple routes → evaluates battery, time, weather → picks best.
+#
+# - Strength:
+#   Optimizes trade-offs, better decisions.
+# - Limitation:
+#   Requires accurate utility function design.
+
+# -------------------------------
+# 5. Learning Agents
+# -------------------------------
+# - Most adaptable and powerful type.
+# - Learns from experience and improves performance over time.
+#
+# - Components:
+#   - Critic → observes outcomes, compares to performance standard → gives feedback (reward).
+#   - Learning Element → updates knowledge/policies based on feedback.
+#   - Problem Generator → suggests new/untried actions (exploration).
+#   - Performance Element → selects actions using learned knowledge.
+#
+# - Example: AI chess bot
+#   - Performance → plays using current strategies.
+#   - Critic → observes win/loss.
+#   - Learning element → adjusts based on thousands of games.
+#   - Problem generator → suggests new moves.
+#
+# - Strength:
+#   Improves over time, adapts to new environments.
+# - Limitation:
+#   Slow, data-intensive, requires feedback loop.
+
+# -------------------------------
+# Summary Comparison
+# -------------------------------
+# - Simple Reflex Agent → reacts (fast, no memory).
+# - Model-Based Reflex Agent → remembers (tracks state, still reactive).
+# - Goal-Based Agent → aims (goal-driven planning).
+# - Utility-Based Agent → evaluates (optimizes best outcome).
+# - Learning Agent → improves (learns from experience, data-heavy).
+
+# -------------------------------
+# Multi-Agent Systems
+# -------------------------------
+# - Multiple agents working together in shared environment.
+# - Cooperative → pursue common goal.
+# - Growing importance as learning agents + generative AI evolve.
+#
+# - Current state:
+#   - Agents are powerful but still benefit from humans in the loop.
+#   - Human oversight critical for complex or high-stakes use cases.

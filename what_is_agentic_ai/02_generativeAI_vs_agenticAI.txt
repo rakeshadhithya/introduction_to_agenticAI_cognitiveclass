@@ -1,0 +1,126 @@
+# -------------------------------
+# Agentic AI (Lesson 1)
+# -------------------------------
+
+# AI Agent:
+# - A system that perceives its environment, decides actions,
+#   takes those actions, and learns from outcomes.
+# - Proactive (pursues goals) vs. Generative AI (reactive).
+
+# Generative AI:
+# - Waits for a prompt (e.g., chatbots, image generators).
+# - Produces output but doesn’t pursue multi-step goals.
+
+# -------------------------------
+# Example
+# -------------------------------
+# Vacation Planning:
+# - Single model: summarize places to visit.
+# - Agent: ask preferences, search flights, compare hotels,
+#   check weather, adapt if preferences change.
+
+# -------------------------------
+# Agents vs. Workflows
+# -------------------------------
+# - Workflow: clear, predictable, step-by-step processes.
+# - Agent: handles ambiguity, adapts when tasks change.
+# - Rule of thumb: predictable → workflow, messy/unpredictable → agent.
+
+# -------------------------------
+# Types of Agents
+# -------------------------------
+# - Reflex agent: simple rules ("if cold → turn on heat").
+# - Model-based agent: tracks state over time.
+# - Goal-based agent: plans to achieve goals.
+# - Utility-based agent: weighs trade-offs.
+# - Learning agent: improves with experience.
+# - Examples: thermostat = reflex, self-driving car = goal-based/learning.
+
+# -------------------------------
+# When Not to Use Agents
+# -------------------------------
+# - Simple, repeatable tasks (summarization, data entry).
+# - When consistency is critical (e.g., medical tasks).
+# - Agents require more resources, can be costly & unpredictable.
+
+# -------------------------------
+# Decision Framework (4 questions)
+# -------------------------------
+# 1. Is the task ambiguous or unpredictable?
+# 2. Is the value worth the extra cost?
+# 3. Does the agent meet minimum skill requirements?
+# 4. What is the risk if it fails?
+# → If low value or high risk, use a simpler tool/workflow.
+
+# -------------------------------
+# Future of Agents
+# -------------------------------
+# - Growth in complex decision-making tasks.
+# - Hybrid systems (workflows + agents) will dominate.
+# - Humans will stay in the loop for now.
+
+# -------------------------------
+# Generative AI vs Agentic AI
+# -------------------------------
+
+# Generative AI:
+# - Reactive system: waits for a user prompt.
+# - Produces content (text, images, code, audio).
+# - Based on patterns/statistical relationships learned in training.
+# - Ends at generation → no further steps without human input.
+# - Humans direct, curate, refine outputs.
+#   Example: YouTuber → AI helps draft scripts, suggest thumbnails,
+#   generate background music, but human controls/edits.
+
+# Agentic AI:
+# - Proactive system: pursues goals through actions (multi-step).
+# - Life cycle:
+#     1. Perceive environment
+#     2. Decide action
+#     3. Execute action
+#     4. Learn from output → repeat
+# - Minimal human intervention.
+#   Example: Personal shopping agent → searches products,
+#   tracks prices, manages checkout, coordinates delivery.
+
+# -------------------------------
+# Common Foundation
+# -------------------------------
+# - Large Language Models (LLMs) power both.
+#   - Chatbots: LLMs
+#   - Images/Audio: diffusion models
+# - For agents: LLM = reasoning engine.
+# - Enables "Chain of Thought" reasoning:
+#   - Breaks complex tasks into smaller logical steps.
+#   - Like humans thinking out loud before acting.
+
+# -------------------------------
+# Example: Conference Planning Agent
+# -------------------------------
+# - Step 1: Understand requirements (size, duration, budget).
+# - Step 2: Research venues that fit parameters.
+# - Step 3: Check availability for short-listed venues.
+# - Step 4: Continue reasoning + refine → then act.
+# → Internal "self-dialogue" using gen AI for reasoning.
+
+# -------------------------------
+# Key Distinctions
+# -------------------------------
+# Generative AI:
+#   - Reactive
+#   - Produces content
+#   - Needs constant human input
+# Agentic AI:
+#   - Proactive
+#   - Pursues goals with multi-step actions
+#   - Learns/adapts with minimal human input
+
+# -------------------------------
+# Future of AI
+# -------------------------------
+# - Strongest systems = hybrid (generative + agentic).
+# - Intelligent collaborators:
+#   - Know when to generate options (exploration).
+#   - Know when to act and commit (execution).
+# - Example: Agent might generate story chapter in background
+#   while preparing logistics for another task.

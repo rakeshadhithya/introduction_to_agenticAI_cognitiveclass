@@ -1,0 +1,60 @@
+# -------------------------------
+# Agentic Retrieval-Augmented Generation (Agentic RAG)
+# -------------------------------
+
+# 1. Recap: Standard RAG
+# -------------------------------
+# - RAG = Retrieval + Generation
+# - Pipeline:
+#   • User query → Prompt → LLM → Output
+#   • With RAG: query → Vector DB → Retrieved context + Query → LLM → Output
+# - Benefits: 
+#   • Grounded answers in accurate data
+#   • Improves reliability & reduces hallucinations
+# - Limitation:
+#   • LLM is used only for *generation* (single DB, no decision-making)
+
+# 2. Extending to Agentic RAG
+# -------------------------------
+# - LLM becomes an **agent**, not just a generator
+# - Agent tasks:
+#   • Decide which data source(s) to query
+#   • Adapt response type (text, chart, code, etc.)
+#   • Handle irrelevant / unsupported queries with failsafe
+
+# 3. Multi-Source Example
+# -------------------------------
+# Sources:
+#   • Internal Documentation (policies, procedures, guidelines)
+#   • General Knowledge Base (industry standards, best practices, public data)
+#
+# Agent Decisions:
+#   • Q: "Company policy on remote work holidays?" → Internal Docs DB
+#   • Q: "Industry standards for remote work in tech?" → General DB
+#   • Q: "Who won World Series 2015?" → Not in scope → Failsafe ("Sorry…")
+
+# 4. Benefits of Agentic RAG
+# -------------------------------
+# - Intelligent routing to most relevant source
+# - More accurate & context-aware retrieval
+# - Failsafe reduces irrelevant or hallucinated responses
+# - Can extend beyond DBs:
+#   • Real-time data (APIs, web)
+#   • Third-party services
+#   • Domain-specific systems (e.g., healthcare, legal, customer support)
+
+# 5. Applications
+# -------------------------------
+# - Customer Support: internal FAQs + public resources
+# - Legal Tech: internal briefs + external case law
+# - Healthcare: hospital records + medical guidelines
+# - General: any scenario requiring multiple knowledge sources
+
+# 6. Key Takeaway
+# -------------------------------
+# - Traditional RAG = single retrieval → generate
+# - Agentic RAG = LLM as decision-making agent:
+#   • Chooses best data source
+#   • Adapts response type
+#   • Uses failsafes for out-of-domain queries
+# - Result: more responsive, accurate, and adaptable AI pipelines

@@ -1,0 +1,74 @@
+# -------------------------------
+# Introduction: Agentic AI
+# -------------------------------
+# - AI is evolving → new frontier: Agentic AI
+# - Beyond chatbots/recommendation engines
+# - Agentic AI = can set goals, make decisions, act autonomously
+# - Brings opportunities (automation, innovation) AND risks (decision errors, security, lack of oversight)
+
+# -------------------------------
+# How Agentic AI Differs
+# -------------------------------
+# - Classical ML: input → model → output (predictive)
+# - Agentic AI: output of one model → input to another model
+# - 4 Characteristics (all stem from autonomy):
+#   1. Underspecification → broad goals, unclear steps
+#   2. Long-term planning → sequential, dependent decisions
+#   3. Goal-directedness → works toward objectives, not just inputs
+#   4. Directedness of impact → may act without human-in-loop
+# - Key: More autonomy = More risk !!!
+
+# -------------------------------
+# Risks of Agentic AI
+# -------------------------------
+# - Misinformation & hallucinations
+# - Decision-making errors
+# - Security vulnerabilities
+# - Reduced human/domain expert oversight
+# - Amplified vs. traditional genAI risks
+
+# -------------------------------
+# Governance for Agentic AI
+# -------------------------------
+# Multilayered Approach:
+# 1. Technical Safeguards
+#    • Guardrails (interruptibility → pause/shut down system)
+#    • Human-in-the-loop (approval checkpoints)
+#    • Confidential data handling (PII detection, masking)
+
+# 2. Process Controls
+#    • Risk-based permissions (forbidden autonomous actions)
+#    • Auditability (trace decisions back)
+#    • Monitoring & evaluation (ongoing oversight)
+
+# 3. Accountability Structures
+#    • Clear responsibility when AI causes harm
+#    • Regulatory compliance
+#    • Vendor accountability
+
+# -------------------------------
+# Technical Safeguards (Layers)
+# -------------------------------
+# - Model layer → detect misaligned actions, enforce ethical rules
+# - Orchestration layer → prevent infinite loops, costly failures
+# - Tool layer → role-based access control, limit tool misuse
+# - Testing & Red-teaming → expose vulnerabilities before deployment
+# - Continuous monitoring → detect hallucinations, compliance violations
+
+# -------------------------------
+# Supporting Tools & Frameworks
+# -------------------------------
+# - Guardrail models → detect/mitigate risky prompts/responses
+# - Orchestration frameworks → safe multi-agent coordination
+# - Security-focused guardrails → enforce policies, protect data
+# - Observability solutions → system visibility & monitoring
+
+# -------------------------------
+# Key Takeaway
+# -------------------------------
+# - Agentic AI = powerful but high-risk
+# - Governance is NOT optional
+# - Governance = security + control + accountability
+# - Before letting AI act on your behalf:
+#   → Ensure guardrails, monitoring, accountability in place
+# - Responsibility lies with us, not just the machine

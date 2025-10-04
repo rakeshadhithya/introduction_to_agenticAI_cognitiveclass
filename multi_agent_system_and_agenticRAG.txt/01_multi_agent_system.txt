@@ -1,0 +1,64 @@
+# -------------------------------
+# Agentic AI & Multi-Agent LLM Systems
+# -------------------------------
+
+# 1. Agentic AI Overview
+# -------------------------------
+# - Agentic AI goes beyond traditional chatbots.
+# - Unlike simple Q&A systems, agentic AI can:
+#   • Set goals
+#   • Make decisions
+#   • Kick off workflows
+#   • Operate with minimal human supervision
+
+# 2. Multi-Agent Systems (MAS)
+# -------------------------------
+# - Why multiple agents?
+#   • A single agent handling all tasks faces context overload and role confusion.
+#   • Multi-agent systems allow specialization: data retrieval, analysis, writing, critiquing.
+#   • Modular and scalable; easier to debug and improve.
+# - Examples:
+#   • Market research report: research agent, analysis agent, writing agent, critique agent.
+#   • Customer support: request classification, FAQ retrieval, reply drafting, escalation.
+
+# 3. Communication Patterns Between Agents
+# -------------------------------
+# - Sequential / Pipeline:
+#   • Agents work one after another (assembly line style)
+# - Parallel with Aggregation:
+#   • Agents work simultaneously; a central agent aggregates results
+# - Interactive Dialogue:
+#   • Agents converse to clarify and refine outputs
+
+# 4. Tools and Frameworks for Coordination
+# -------------------------------
+# - Protocols: MCP (Model Context Protocol), IBM ACP
+# - Frameworks: LangGraph, CrewAI, BeeAI
+# - Benefits:
+#   • Standardized communication
+#   • Easier orchestration of complex workflows
+#   • Integration with external tools
+
+# 5. Risks of Agentic AI
+# -------------------------------
+# - Under specification: broad goals without step-by-step guidance
+# - Autonomous long-term planning without human oversight
+# - Potential for decision errors, security vulnerabilities, and misinformation
+
+# 6. Governance & Safety
+# -------------------------------
+# - Multilayered approach:
+#   • Technical safeguards (guardrails to stop runaway processes)
+#   • Human-in-the-loop checks for sensitive actions
+#   • Data privacy controls
+#   • Auditability (trace decisions)
+#   • Role-based access (limit agent capabilities)
+# - Organizational responsibility:
+#   • Monitoring and red-teaming
+#   • Ongoing supervision and intervention when needed
+
+# 7. Future Outlook
+# -------------------------------
+# - AI is trending toward more collaborative and capable multi-agent systems.
+# - Opportunities: customer service, healthcare, legal tech, and more.
+# - Key challenge: balance capability with safety and human alignment.

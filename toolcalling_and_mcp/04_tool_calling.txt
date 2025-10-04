@@ -1,0 +1,57 @@
+# -------------------------------
+# Tool Calling
+# -------------------------------
+
+# Definition
+# -------------------------------
+# - Technique to make LLMs context-aware of real-time data (APIs, databases, code).
+# - Typically used via chat interface (client app ↔ LLM).
+
+# Traditional Tool Calling
+# -------------------------------
+# Flow:
+# 1. Client app sends → user messages + tool definitions → LLM
+# 2. LLM recommends tool to call
+# 3. Client executes tool → returns response → send back to LLM
+# 4. LLM interprets → gives final answer (or next tool to call)
+
+# Tool Definition includes:
+# - Tool name
+# - Description (how/when to use)
+# - Input parameters
+# - Examples: APIs, databases, code interpreter
+
+# Example:
+# Q: "What’s the temperature in Miami?"
+# - Tools list includes Weather API
+# - LLM suggests → call Weather API
+# - API returns "71°F"
+# - LLM responds: "The weather in Miami is nice, 71°F."
+
+# Limitations of Traditional Approach:
+# - LLM may hallucinate
+# - May generate incorrect tool calls
+
+# Embedded Tool Calling
+# -------------------------------
+# - Uses a library/framework between app & LLM
+# - Library:
+#   • Holds tool definitions
+#   • Executes tool calls
+#   • Handles retries
+#
+# Flow:
+# - App sends message → library adds tool definitions → LLM
+# - LLM suggests tool → library executes directly
+# - Library returns final answer to app
+#
+# Benefits:
+# - Reduces hallucinations
+# - Automates execution + error handling
+
+# -------------------------------
+# Key Takeaway
+# -------------------------------
+# - Tool calling enables LLMs to use external resources (APIs, DBs, code).
+# - Traditional tool calling → client executes tool calls.
+# - Embedded tool calling → library manages tool calls → safer & more reliable.

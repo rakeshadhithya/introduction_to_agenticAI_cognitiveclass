@@ -1,0 +1,44 @@
+# -------------------------------
+# When to Call Tools Manually
+# -------------------------------
+
+# Purpose
+# -------------------------------
+# - Explore how LLMs suggest actions using tools.
+# - Understand agents’ role in automating tool execution.
+# - Learn why manual invocation provides greater control.
+
+# Context
+# -------------------------------
+# - LLMs can suggest tools + parameters to perform tasks (e.g., weather API with location & date).
+# - Agents can automatically execute tools without human intervention.
+
+# Risks of Automatic Execution
+# -------------------------------
+# - Safety: unintended actions could cause problems (e.g., financial data errors).
+# - Cost: unnecessary API calls can increase expenses.
+# - Accuracy: incorrect parameters or misuse can lead to wrong results.
+# - Oversight: no manual check to ensure alignment with goals.
+
+# Manual Tool Invocation
+# -------------------------------
+# Benefits:
+# 1. Safety – prevent unintended actions.
+# 2. Cost control – avoid unnecessary API calls.
+# 3. Accuracy – ensure correct parameters and correct tool usage.
+# 4. Oversight – validate inputs/outputs, ensure alignment with intentions.
+# 5. Reliability – maintain precision in results and operations.
+
+# How it Works
+# -------------------------------
+# 1. User prompt → LLM suggests tool + parameters.
+# 2. Human reviews suggestion.
+# 3. Human executes tool manually.
+# 4. Results validated and returned.
+
+# Key Takeaways
+# -------------------------------
+# - Automation is efficient but carries risks.
+# - Manual invocation offers control, safety, and precision.
+# - Evaluate LLM tool suggestions to ensure reliability.
+# - Choose manual vs automated approach based on task sensitivity and desired oversight.

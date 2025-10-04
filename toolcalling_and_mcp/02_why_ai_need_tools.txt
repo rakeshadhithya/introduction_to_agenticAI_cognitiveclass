@@ -1,0 +1,50 @@
+# -------------------------------
+# Agentic AI (Lesson 2) – Tools for LLMs
+# -------------------------------
+
+# Why LLMs Need Tools
+# -------------------------------
+# - LLMs (Large Language Models) excel at generating text.
+# - But: cannot perform real-world tasks directly 
+#   (e.g., math, API calls, live data).
+# - Without tools → they "guess" based on patterns, often inaccurate.
+#   Example: multiply 371 × 492 → likely wrong without a calculator.
+
+# Tools = external functions/resources that LLMs can call.
+# - Enable accurate math (calculator).
+# - Fetch weather, news, databases, APIs.
+# - Allow models to move from "text generators" → "problem solvers."
+
+# -------------------------------
+# How Tools Work in Practice
+# -------------------------------
+# 1. User provides a request.
+# 2. LLM decides which tool is relevant.
+# 3. Tool executes (calculation, API call, DB query, etc.).
+# 4. LLM integrates tool output into final response.
+
+# -------------------------------
+# Risks & Control
+# -------------------------------
+# - Fully automated tool use can be risky:
+#   e.g., incorrect DB update → costly/regulatory issues.
+# - Manual tool invocation:
+#   - Safer (human-in-loop).
+#   - Reduces cost (fewer API calls).
+#   - Ensures accuracy (double-check results).
+
+# -------------------------------
+# Standard: MCP (Model Context Protocol)
+# -------------------------------
+# - Open standard to connect agents with:
+#   - Databases
+#   - APIs
+#   - Local files
+# - Simplifies management of multiple connections.
+
+# -------------------------------
+# Key Takeaway
+# -------------------------------
+# - LLMs alone = reactive text generators.
+# - With tools → become **agentic systems** capable of real-world action.
+# - Tools = bridge from “talking” → “doing.”
